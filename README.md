@@ -25,7 +25,7 @@ yarn run lint --fix #fix linting errors
 - This uses vanilla JS (ES6) without any dependencies except a couple lodash functions, however, using a functional programming library/toolkit such a ramda might create a more concise and equally performant solution (couple recipes that touch on this https://github.com/ramda/ramda/wiki/Cookbook#rename-keys-of-an-object or https://github.com/ramda/ramda/wiki/Cookbook#get-object-by-id), but obviously with a larger dependency tree
 - In ES6, there are many constructs that one can use instead of helpers such as those provided by lodash, but to I find code is more concise when using i.e. `_.has(mutation, index)` rather than `Object.prototype.hasOwnProperty.call(mutation, index)` - even though under the hood the former just wraps the latter
 - The spec specified the implementation to be JS, if this restriction was not in place, TypeScript would be preferred
-- The only driver here are the unit tests, however it should be trivial to import the module should one want to use it in other contexts (i.e. a REST web interface or a CLI)
+- ~~The only driver here are the unit tests, however it should be trivial to import the module should one want to use it in other contexts (i.e. a REST web interface or a CLI)~~ **Apart from the unit test driver, there is a demo REST interface at https://github.com/sraka1/generate-update-statement-server**
 - To test genericness, an additional fixture with a third nesting level was added in the tests
 
 #### Spec ambiguities or conflicts
