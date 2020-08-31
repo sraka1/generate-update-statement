@@ -1,5 +1,6 @@
 {
   "name": "@sraka1/generate-update-statement",
+  "version": "0.0.1",
   "main": "./src/index.js",
   "author": "Jakob Murko <hi@jakko.me>",
   "license": "MIT",
